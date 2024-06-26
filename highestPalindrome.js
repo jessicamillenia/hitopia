@@ -38,5 +38,6 @@ function highestPalindrome(s, k) {
     return palindrome(0, numbers.length - 1, false);
 }
 
-console.log(highestPalindrome("3943", 1));
-console.log(highestPalindrome("932239", 2));
+console.log(highestPalindrome("3943", 1)); //3993
+console.log(highestPalindrome("932239", 2)); //992299
+console.log(highestPalindrome("832339", 4)); //993399

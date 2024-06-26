@@ -26,8 +26,6 @@ const mapStringToNumber = {
     'y': 25,
     'z': 26
 };
-const s = "abbcccd";
-const queries = [1, 3, 9, 8];
 
 function weightedStrings(s, queries) {
     const weights = [];
@@ -56,4 +54,6 @@ function weightedStrings(s, queries) {
     return answer;
 }
 
-console.log(weightedStrings(s, queries));
+console.log(weightedStrings("abbcccd", [1, 3, 9, 8])); //[ 'Yes', 'Yes', 'Yes', 'No' ]
+console.log(weightedStrings("aaabbdd", [1, 3, 6, 9])); //[ 'Yes', 'Yes', 'No', 'No' ]
+console.log(weightedStrings("aabccccd", [1, 3, 7, 9])); //[ 'Yes', 'Yes', 'No', 'Yes' ]

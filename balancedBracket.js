@@ -22,6 +22,6 @@ function isBalancedBracket(brackets) {
     return checkIsBalaced.length === 0 ? "YES" : "NO";
 }
 
-console.log(isBalancedBracket("{ [ ( ) ] }"));
-console.log(isBalancedBracket("{ [ ( ] ) }"));
-console.log(isBalancedBracket("{ ( ( [ ] ) [ ] ) [ ] }"));
+console.log(isBalancedBracket("{ [ ( ) ] }")); //YES
+console.log(isBalancedBracket("{ [ ( ] ) }")); //NO
+console.log(isBalancedBracket("{ ( ( [ ] ) [ ] ) [ ] }")); //YES
